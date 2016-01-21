@@ -11,4 +11,8 @@ git clone https://github.com/simian-lab/vagrant-wordpress.git
 * Search and replace *'my-project'* for your project name in the ***vagrant.sh*** file.
 * Set the *ServerName* in the ***stack/local-virtualhost.conf*** file.
 * Choose a database name in ***stack/local_db.sql***.
+* Add this to your *etc/hosts*:
+  ````
+  192.168.100.110 the_ServerName_you_chose
+  ````
 * You're ready, just run `vagrant up`.
